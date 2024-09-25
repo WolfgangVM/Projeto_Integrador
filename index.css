@@ -1,0 +1,11 @@
+body{
+    background-color: color-mix(in srgb, green 60%, white 40%);
+}
+footer{
+    background-color: aliceblue;
+}
+img[title]{border-style: ;}
+
+a: link{color: rgb(14, 14, 190);text-decoration:none;}
+
+a:visited{color: red;}
