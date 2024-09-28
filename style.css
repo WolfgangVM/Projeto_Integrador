@@ -32,12 +32,21 @@ header{
 
 footer{
     background-color: cornsilk;
-    height: 12vh;
+    height: 23vh;
     text-align: center;
     align-items: center;
     width: 100%;
+    margin: 0%;
 }
 
 main{
     height: 76vh;
+}
+div{
+    width: 28%;
+    height: 100$;
+    display:inline-block;
+    background-color: aqua;
+    text-align: center;
+
 }
