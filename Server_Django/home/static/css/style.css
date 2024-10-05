@@ -2,7 +2,7 @@
 
 /*Definição do corpo da pagina*/
 body{
-background-color:darkseagreen;
+background: linear-gradient(green, rgb(106, 187, 106)); 
     align-items: center;
     display: flex;
     justify-content: center;
