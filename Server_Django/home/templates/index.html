@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-sacale=1,0">
     <meta name="keywords" content="pontos de coleta, reciclagem, onde descartar">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
 
     <title>Local de descarte</title>
@@ -16,29 +17,40 @@
 </head>
 
 <body>
-
     <header>Encontre o local para descarte mais próximo</header>
-    <main><p>paragrafo</p></main>
+    <main><p>Navegação</p></main>
+
+    <div id="map"></div>
+
+    <script id="map-data" type="application/json">
+        {{ locations|safe }}
+    </script>
     
-    <script src="{% static 'js/index.js' %}"></script>
+  
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <script src="{% static 'js/index.js' %}"></script>  
 </body>
 
 
 <footer >
+    
     <div>
         <p>Sobre:</p>
         <p>Está é uma pagina de busca de pontos para reciclagem.</p>
         <p>Nesta página você também pode encontrar varias informações.</p>
     </div>
+
     <div>
         <p>Autores:</p>
         <p>Adalton K</p>
         <p>Wolfgang V. Manzato</p>
         <p></p>
     </div>
+
     <div>
         <p>Direitos autorais:</p>
-        <p> imagens:<a href="https://br.freepik.com/vetores-gratis/conjunto-de-quatro-placas-de-reciclagem-verde-graidnet_37409182.htm#query=simbolo%20reciclagem&position=4&from_view=keyword&track=ais_hybrid&uuid=a91d21fc-9411-4b98-b6a3-9c7142723117">Imagem de juicy_fish</a> no Freepik</div></p>
-        <p></p>
-        <p></p>
+        <p> imagens:<a href="https://br.freepik.com/vetores-gratis/conjunto-de-quatro-placas-de-reciclagem-verde-graidnet_37409182.htm#query=simbolo%20reciclagem&position=4&from_view=keyword&track=ais_hybrid&uuid=a91d21fc-9411-4b98-b6a3-9c7142723117">Imagem de juicy_fish</a> no Freepik
+        </div>
+ 
     </footer>
