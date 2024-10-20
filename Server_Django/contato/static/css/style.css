@@ -1,0 +1,117 @@
+/*Style CSS*/
+
+/*Definição do corpo da pagina*/
+body{
+background: linear-gradient(green, rgb(106, 187, 106)); 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size-adjust: none;
+	height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    width: 38px;
+    height: 38px;
+    position:absolute;
+    top: auto;
+    left: 1%;
+    
+}
+header{
+    background-color: darkred;
+    margin: 0%;
+    width: 100%;
+    text-align-last: center;
+    font-size: xx-large;
+    padding: 0%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    color: white;
+}
+
+footer{
+    background-color: cornsilk;
+    height: 23vh;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+	padding: 10px 0;
+}
+
+main{
+    height: 76vh;
+	width: 100%;
+    padding: 20px;
+    margin-top: 60px;
+}
+div{
+    width: 28%;
+    display:inline-block;
+    background-color: aqua;
+    text-align: center;
+	margin: 10px;
+
+}
+.chat-container {
+    width: 40%;
+    margin: 20px 0 20px 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*.chat-container {
+    width: 40%; /
+    margin: 20px auto;
+    margin-left: auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}*/
+
+.chat-box {
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.chat-input {
+    display: flex;
+    gap: 0px;
+}
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+}
+.chat-input button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+
+
