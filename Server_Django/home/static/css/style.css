@@ -55,3 +55,36 @@ main{
     height: 600px;  
     width: 60%;     
 }
+.chat-box {
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.chat-input {
+    display: flex;
+    gap: 0px;
+}
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+}
+.chat-input button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: darkgreen;
+}
+
+
