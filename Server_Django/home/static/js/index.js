@@ -1,7 +1,7 @@
 // map
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar o mapa
-    var map = L.map('map').setView([-23.55052, -46.633308], 12);  // Coordenadas iniciais de São Paulo
+    var map = L.map('map').setView([-22.348923636964468, -48.77864794069507], 12);  // Coordenadas iniciais de São Paulo
 
     // Adicionar camada de tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
