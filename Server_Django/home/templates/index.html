@@ -18,15 +18,19 @@
 
 <body>
     <header>Encontre o local para descarte mais próximo</header>
-    <main><p>Navegação</p></main>
-
+    <main>
+        <div id="navegacao"><ul><li>Navegação<a href="index.html"><center>Home</center></a></li></div><!---->
+        <div id="navegacao"><li class="submenu"><a aria-haspopup="true">Locais
+            <span class="nav-loocais">2</span></a></li></div>
+        <div id="navegacao"><ul><li>Contato<a href="contato.html"></a></li></ul></div>
+    </ul></main>
+    
     <div id="map"></div>
 
     <script id="map-data" type="application/json">
         {{ locations|safe }}
     </script>
-     <button></button>
-     <button></button> 
+     
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     
     <script src="{% static 'js/index.js' %}"></script>  
