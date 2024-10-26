@@ -17,3 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         marker.bindPopup(location.name);
     });
 });
+
+
+<script>
+    
+</script>

@@ -8,3 +8,6 @@ def home(request):
 
 def contato(request):
     return render(request, 'contato.html')
+
+def teste(request):
+    return render(request, 'home.html')

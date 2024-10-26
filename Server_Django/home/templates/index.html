@@ -7,36 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-sacale=1,0">
     <meta name="keywords" content="pontos de coleta, reciclagem, onde descartar">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
 
     <title>Local de descarte</title>
     <header >
         <img src="{% static 'images/reciclagem.png' %}">
     </header>
+    <body>
+        <header>Encontre o local para descarte mais próximo</header>
+            <nav id="menu">
+                <div id="navegacao">
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                </div>
+                <div id="navegacao">
+                    <li class="submenu">
+                        <a aria-haspopup="true" href="#">Locais
+                            <span class="nav-locais"></span>
+                        </a>
+                    </li>
+                </div>
+                <div id="navegacao">
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </div>
+        </nav>
 
-</head>
-
-<body>
-    <header>Encontre o local para descarte mais próximo</header>
-    <main>
-        <div id="navegacao"><ul><li>Navegação<a href="index.html"><center>Home</center></a></li></div><!---->
-        <div id="navegacao"><li class="submenu"><a aria-haspopup="true">Locais
-            <span class="nav-loocais">2</span></a></li></div>
-        <div id="navegacao"><ul><li>Contato<a href="contato.html"></a></li></ul></div>
-    </ul></main>
+        <div id="map"></div>
     
-    <div id="map"></div>
-
-    <script id="map-data" type="application/json">
-        {{ locations|safe }}
-    </script>
-     
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script id="map-data" type="application/json">
+            {{ locations|safe }}
+        </script>
+         
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="{% static 'js/index.js' %}"></script>  
+    </body>
     
-    <script src="{% static 'js/index.js' %}"></script>  
-</body>
-
-
 <footer >
     
     <div id="rodape">

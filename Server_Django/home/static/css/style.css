@@ -1,16 +1,11 @@
 /*Style CSS*/
 
 /*Definição do corpo da pagina*/
-body{
-background: linear-gradient(rgb(149, 193, 149), rgb(121, 146, 121)); 
-    align-items: center;
+body {
+    background: linear-gradient(rgb(149, 193, 149), rgb(121, 146, 121)); 
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-size-adjust: none;
     font-size: larger;
-
 }
 img{
     width: 38px;
@@ -20,49 +15,7 @@ img{
     left: 1%;
     
 }
-header{
-    background-color: darkred;
-    margin: 0%;
-    width: 100%;
-    text-align-last: center;
-    font-size: xx-large;
-    padding: 0%;
-    position: top;
-    top: 0;
-    height: 4%;
-}
 
-footer{
-    background-color: cornsilk;
-    height: 23vh;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    margin: 0%;
-}
-
-main{
-    height: auto;
-    width:auto;
-    position: relative;
-}
-#navegacao{
-    position:absolute;
-    width: 100px;
-    height: 50px;
-
-}
-#rodape{
-    width: 28%;
-    display:inline-block;
-    text-align: center;
-
-}
-#map {
-    margin-top: -500px;
-    height: 200px;  
-    width: 60%;     
-}
 .chat-box {
     height: 200px;
     background-color: white;
