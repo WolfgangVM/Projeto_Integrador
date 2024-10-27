@@ -1,51 +1,117 @@
-/*Style CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/*Definição do corpo da pagina*/
 body {
     background: linear-gradient(rgb(149, 193, 149), rgb(121, 146, 121)); 
     display: flex;
     flex-direction: column;
     font-size: larger;
+    font-family: "poppins";
 }
+
 img{
     width: 38px;
     height: 38px;
     position:absolute;
-    top: auto;
-    left: 1%;
-    
+    left: 1%;  
+    z-index: auto;  
 }
 
-.chat-box {
-    height: 200px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-.chat-input {
+nav{
     display: flex;
-    gap: 0px;
+    justify-content: flex-end;
+    margin-left: -20px;
+    font-family: "poppins";
 }
-.chat-input input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 0px;
-    border: 1px solid #ccc;
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-.chat-input button {
-    padding: 10px 20px;
-    background-color: green;
+
+nav li{
+    height: 60px;
+    display: flex;    
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
     color: white;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
 }
 
-.chat-input button:hover {
-    background-color: darkgreen;
+.icon{
+    fill: white;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 999;
+    background-color: green, 0,2;
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+@media(max-width: 800px){
+    .hideMobile{
+        display: none;
+
+    }
+}
+header {
+    background-color: brown;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px 0;
+    position: fixed, center;
+    top: 0;
+    font-family: "poppins";
+}
+
+#map {
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 50px; 
+    height: 600px;    
+    width: 60%;    
+}
+
+#menu{
+    width: 100%;
+    text-align: center;
 }
 
 
+
+footer{
+    background-color: cornsilk;
+    height: 23vh;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+    font-family: "poppins";
+}
+
+#rodape{
+    width: 28%;
+    display:inline-block;
+    text-align: center;
+    margin: 0;
+
+}

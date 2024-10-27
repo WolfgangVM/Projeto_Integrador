@@ -21,8 +21,10 @@ from home import views
 
 
 
+
 urlpatterns = [
     path('home/', views.home, name='index'),
     path('contato/', views.contato, name='contato'),
-    
+    path('info/', views.info, name='info')
+ 
 ]

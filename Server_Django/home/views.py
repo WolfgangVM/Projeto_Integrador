@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpRequest
-from .models import locations
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from .models import Local
 import json
 
 def home(request):
@@ -9,5 +11,5 @@ def home(request):
 def contato(request):
     return render(request, 'contato.html')
 
-def teste(request):
-    return render(request, 'home.html')
+def info(request):
+    return render (request, 'info.html')
