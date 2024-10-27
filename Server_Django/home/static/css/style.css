@@ -1,26 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-body {
-    background: linear-gradient(rgb(149, 193, 149), rgb(121, 146, 121)); 
-    display: flex;
-    flex-direction: column;
-    font-size: larger;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
     font-family: "poppins";
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 img{
-    width: 38px;
-    height: 38px;
-    position:absolute;
-    left: 1%;  
-    z-index: auto;  
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.barra{
+    background-color: rgb(74, 145, 74, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
 }
 
 nav{
     display: flex;
     justify-content: flex-end;
     margin-left: -20px;
-    font-family: "poppins";
 }
 
 nav ul{
@@ -42,11 +48,15 @@ nav a{
     text-decoration: none;
     display: flex; 
     align-items: center; 
-    color: white;
+    color: black;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: grey;
 }
 
 .icon{
-    fill: white;
+    fill: black;
 }
 
 .sidebar{
@@ -64,6 +74,12 @@ nav a{
     justify-content: flex-start;
     backdrop-filter: blur(10px);
 }
+nav li:first-child.logotipo{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-inline-end: 15%;
+    margin-right: auto;
+}
 
 @media(max-width: 800px){
     .hideMobile{
@@ -71,17 +87,12 @@ nav a{
 
     }
 }
-header {
-    background-color: brown;
-    margin-top: 0;
-    width: 100%;
-    text-align: center;
-    font-size: xx-large;
-    padding: 10px 0;
-    position: fixed, center;
-    top: 0;
-    font-family: "poppins";
+@media(min-width:800px){
+    .hideDesktop{
+        display: none;
+    }
 }
+
 
 #map {
     margin-left: 18%;
@@ -91,12 +102,6 @@ header {
     width: 60%;    
 }
 
-#menu{
-    width: 100%;
-    text-align: center;
-}
-
-
 
 footer{
     background-color: cornsilk;
@@ -105,7 +110,6 @@ footer{
     align-items: center;
     width: 100%;
     margin: 0%;
-    font-family: "poppins";
 }
 
 #rodape{
@@ -115,3 +119,47 @@ footer{
     margin: 0;
 
 }
+
+
+
+
+
+
+/*Stylo para pagina Contatos*/
+
+h2{
+    position: relative;
+}
+
+.chat-box {
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.chat-input {
+    display: flex;
+    gap: 0px;
+}
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+}
+.chat-input button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: darkgreen;
+}
+
