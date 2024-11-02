@@ -7,6 +7,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 100vh;
 }
 
 img{
@@ -131,10 +132,10 @@ footer{
 }
 
 #rodape{
-    width: 28vh;
+    width: 30vh;
     display:inline-block;
     text-align: center;
-    margin: 0;
+    margin-right: 5vh;
     -webkit-text-size-adjust: auto;
     background-color: cornsilk;
     height: auto;
@@ -150,6 +151,11 @@ footer{
 
 h2{
     position: relative;
+    text-align: center;
+
+}
+.pcontato{
+    text-align: center;
 }
 
 .chat-box {

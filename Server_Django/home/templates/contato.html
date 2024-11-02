@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-sacale=1,0">
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'img/fundo.jpg'%}">
 
     <title>Contato</title>
     <header >
@@ -15,11 +16,44 @@
 </head>
 
 <body style="background-image: url('{%static 'img/fundo.jpg'%}');">
-	
+	<nav>
+        <ul class="barra"> 
+            <li class="logotipo"><a href="#"><img src="{%static 'img/reciclagem.png'%}">Pontos de Reciclagem</a></li>   
+            <li class="hideMobile"><a href="{% url 'index' %}">Home</a></li>                  
+            <li class="hideMobile">
+                <a aria-haspopup="true" href="">Locais
+                    <span class="nav-locais"></span>
+                </a>
+            </li>
+            <li class="hideMobile"><a href="{% url 'info' %}">Informações</a></li>        
+            <li class="hideMobile"><a href="{% url 'contato' %}">Contato</a></li>
+            <li class="hideDesktop"><a href="" id="abrir">
+                <svg class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </a></li>                    
+        </ul>
+    </nav>
+    
+    <nav>
+        <ul class="sidebar" id="sidebar">    
+            <li><a href="" id="fechar">
+                <svg  class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </a></li>                    
+            <li><a href="{% url 'index' %}">Home</a></li>                  
+            <li>
+                <a aria-haspopup="true" href="">Locais
+                    <span class="nav-locais"></span>
+                </a>
+            </li>
+            <li><a href="{% url 'info' %}">Informações</a></li>        
+            <li><a href="{% url 'contato' %}">Contato</a></li>
+        </ul>
+
+    </nav>
+
 	 <section class="chat-container">
         <h2>Fale Conosco</h2>
         <p></p>
-        <p>Na caixa de dialogo, escreva sua duvida, informações sobre locais, ou algua sugestão.</p>
+        <p id="pcontato">Na caixa de dialogo, escreva sua duvida, informações sobre locais, ou algua sugestão.</p>
         <div class="chat-box" id="chat-box">
             <!-- As mensagens aparecerão aqui -->
         </div>
@@ -29,4 +63,6 @@
         </div>
     </section>
     
+    
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
