@@ -15,51 +15,44 @@
 
     <body style="background-image: url('{%static 'img/fundo.jpg'%}');">
             <nav>
-                <div>
-                    <ul class="barra"> 
-                        <li class="logotipo"><a href="#"><img src="{%static 'img/reciclagem.png'%}">Pontos de Reciclagem</a></li>   
-                        <li class="hideMobile"><a href="{% url 'index' %}">Home</a></li>                  
-                        <li class="hideMobile">
-                            <a aria-haspopup="true" href="#">Locais
-                               <span class="nav-locais"></span>
-                            </a>
-                        </li>
-                        <li class="hideMobile"><a href="{% url 'info' %}">Informações</a></li>        
-                        <li class="hideMobile"><a href="{% url 'contato' %}">Contato</a></li>
-                        <li class="hideDesktop" onclick=showSidebar><a href="">
-                            <svg class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                        </a></li>                    
-                    </ul>
+                <ul class="barra"> 
+                    <li class="logotipo"><a href="#"><img src="{%static 'img/reciclagem.png'%}">Pontos de Reciclagem</a></li>   
+                    <li class="hideMobile"><a href="{% url 'index' %}">Home</a></li>                  
+                    <li class="hideMobile">
+                        <a aria-haspopup="true" href="#">Locais
+                            <span class="nav-locais"></span>
+                        </a>
+                    </li>
+                    <li class="hideMobile"><a href="{% url 'info' %}">Informações</a></li>        
+                    <li class="hideMobile"><a href="{% url 'contato' %}">Contato</a></li>
+                    <li class="hideDesktop"><a href="#">
+                        <svg class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </a></li>                    
+                </ul>
+            </nav>
+            
+            <nav>
+                <ul class="sidebar">    
+                    <li><a href="">
+                        <svg class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </a></li>                    
+                    <li><a href="{% url 'index' %}">Home</a></li>                  
+                    <li>
+                        <a aria-haspopup="true" href="#">Locais
+                            <span class="nav-locais"></span>
+                        </a>
+                    </li>
+                    <li><a href="{% url 'info' %}">Informações</a></li>        
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </ul>
 
-                    <ul class="sidebar">    
-                        <li onclick=hideSidebar><a href="">
-                            <svg class="icon"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                        </a></li>                    
-                        <li><a href="{% url 'index' %}">Home</a></li>                  
-                        <li>
-                            <a aria-haspopup="true" href="#">Locais
-                               <span class="nav-locais"></span>
-                            </a>
-                        </li>
-                        <li><a href="{% url 'info' %}">Informações</a></li>        
-                        <li><a href="{% url 'contato' %}">Contato</a></li>
-                    </ul>
-                </div>
-        </nav>
+            </nav>
 
         <div id="map"></div>
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <script src="{% static 'js/mapa.js' %}"></script>
-        <script>
-            function showSidebar(){
-                const sidebar = document.querySelector(".sidebar");
-                sidebar.style.display = "flex";
-            }
-            function hideSidebar(){
-                const sidebar = document.querySelector(".sidebar");
-                sidebar.style.display = "none";
-            }
-        </script>
+        <script src="{% static 'js/index.js' %}"></script>
+
         
     </body>
     
