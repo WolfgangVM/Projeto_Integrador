@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// const navLocais = document.getElementById('nav-locais');
+
+// // Evento de click ao elemento
+// navLocais.addEventListener('click', function(event) {
+//   // Verifique se o click foi no elemento que você deseja
+//   if (event.target.tagName === 'dropdown-menu') {
+//     // Mostra ou esconde o dropdown
+//     const dropdown = event.target.nextElementSibling;
+//     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+//   }
+// });
