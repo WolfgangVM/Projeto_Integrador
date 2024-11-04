@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('tipo_material', models.CharField(max_length=100)),
             ],
         ),
-        migrations.DeleteModel(
+            migrations.DeleteModel(
             name='locations',
         ),
     ]
