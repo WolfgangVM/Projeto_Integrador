@@ -210,7 +210,7 @@ h2{
 /* pagina info*/
 
 .textoInf{
-    height: 100vh;
+    height: 90vh;
     width: 80vh;
     margin-top: 20vh;
     background-color: azure;
@@ -218,4 +218,8 @@ h2{
     background-position-x: 100;
     margin-left: 10vh;
     margin-right: 10vh;
+    border-width: 0.5vh;
+    border-color: #3498db;
+    border-style: solid;
+    border-radius: 2vh;
 }
