@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 *{
     font-family: "poppins";
@@ -154,35 +153,52 @@ h2{
     text-align: center;
 
 }
-.pcontato{
+#pcontato{
     text-align: center;
 }
 
-.chat-box {
-    height: 200px;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.chat-box { 
+    width: 50%; /* Ajustando para 50% da largura do pai */ 
+    height: 10vh; /* Ajustando altura */ 
+    background-color: white; 
+    border: 0.2em solid #ccc; /* Corrigido o valor da borda */ 
+    padding: 1em; 
+    overflow-y: auto; 
+    margin: 0 auto 1em auto; /* Centraliza o elemento */ 
+    border-radius: 0.5em;
 }
-.chat-input {
+/*.chat-box {
+    width: 50%;
+    height: 10vh;
+    background-color: white;
+    border: 0,2eSm solid #ccc;
+    padding: 1em;
+    overflow-y: auto;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}*/
+.chat-input { 
+    display: flex; 
+    width: 50%;
+    margin: 0 auto;
+    gap: 0
+
+/*.chat-input {
     display: flex;
-    gap: 0px;
+    gap: 0;*/
 }
 .chat-input input {
     flex: 1;
-    padding: 10px;
-    border-radius: 0px;
-    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 0;
+    border: 0.1em solid #ccc;
 }
 .chat-input button {
-    padding: 10px 20px;
+    padding: 1em 2em;
     background-color: green;
     color: white;
     border: none;
-    border-radius: 0px;
+    border-radius: 0;
     cursor: pointer;
 }
 
@@ -193,12 +209,16 @@ h2{
 /* pagina info*/
 
 .textoInf{
-    height: 100vh;
+    height: 90vh;
     width: 80vh;
-    margin-top: 20vh;
+    margin-top: 5vh;
     background-color: azure;
     position: relative;
     background-position-x: 100;
     margin-left: 10vh;
     margin-right: 10vh;
+    border-width: 0.5vh;
+    border-color: #3498db;
+    border-style: solid;
+    border-radius: 2vh;
 }
