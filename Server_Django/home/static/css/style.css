@@ -158,13 +158,13 @@ h2{
 }
 
 .chat-box { 
-    width: 50%; /* Ajustando para 50% da largura do pai */ 
-    height: 10vh; /* Ajustando altura */ 
+    width: 50%; 
+    height: 10vh; 
     background-color: white; 
-    border: 0.2em solid #ccc; /* Corrigido o valor da borda */ 
+    border: 0.2em solid #ccc; 
     padding: 1em; 
     overflow-y: auto; 
-    margin: 0 auto 1em auto; /* Centraliza o elemento */ 
+    margin: 0 auto 1em auto; 
     border-radius: 0.5em;
 }
 /*.chat-box {
@@ -208,15 +208,27 @@ h2{
 
 /* pagina info*/
 
+main{
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    text-justify: auto;
+    
+}
+h1{
+    text-align: center;
+}
+p{
+    margin: 2vh;
+}
+
 .textoInf{
-    height: 90vh;
-    width: 80vh;
+    position: relative;
+    align-items: center;
     margin-top: 5vh;
     background-color: azure;
     position: relative;
     background-position-x: 100;
-    margin-left: 10vh;
-    margin-right: 10vh;
     border-width: 0.5vh;
     border-color: #3498db;
     border-style: solid;
