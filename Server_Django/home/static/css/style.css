@@ -60,6 +60,14 @@ nav a{
 nav a:hover{
     color: rgb(213, 24, 24);
 }
+.barNav{
+    display: none;
+    flex-direction: column;
+}
+.locais{
+    display: none;
+    flex-direction: column;
+}
 
 .icon{
     fill: black;
@@ -67,7 +75,7 @@ nav a:hover{
 
 .sidebar{
     position: absolute;
-    top: 5%;
+    top: 5vh;
     right: 0;
     height: 100vh;
     width: 50vh;
@@ -79,6 +87,14 @@ nav a:hover{
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     display: none;
+}
+.barNavLateral{
+    display: none;
+    flex-direction: column;
+}
+.navplateral{
+    display: none;
+    flex-direction: column;
 }
 
 
@@ -104,6 +120,7 @@ nav li:first-child.logotipo{
 #fechar:active ~ .sidebar {
     display: none;
 }
+
 @media(min-width:800px){
     .hideDesktop{
         display: none;
