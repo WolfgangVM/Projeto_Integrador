@@ -29,42 +29,42 @@ fetch('/api/localizacoes/')
             .catch(error => console.error('Erro ao carregar localizações:', error));
 
 
-        // Mobile
+//         // Mobile
 
-var popup = L.popup();
+// var popup = L.popup();
 
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent("You clicked the map at " + e.latlng.toString())
+//         .openOn(map);
+// }
 
-map.on('click', onMapClick);
+// map.on('click', onMapClick);
 
 
-var map = L.map('map').fitWorld();
+// var map = L.map('map').fitWorld();
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
-}).addTo(map);
+// L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 19,
+//     attribution: '© OpenStreetMap'
+// }).addTo(map);
 
-map.locate({setView: true, maxZoom: 16});
+// map.locate({setView: true, maxZoom: 16});
 
-function onLocationFound(e) {
-    var radius = e.accuracy;
+// function onLocationFound(e) {
+//     var radius = e.accuracy;
 
-    L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+//     L.marker(e.latlng).addTo(map)
+//         .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-    L.circle(e.latlng, radius).addTo(map);
-}
+//     L.circle(e.latlng, radius).addTo(map);
+// }
 
-map.on('locationfound', onLocationFound);
+// map.on('locationfound', onLocationFound);
 
-function onLocationError(e) {
-    alert(e.message);
-}
+// function onLocationError(e) {
+//     alert(e.message);
+// }
 
-map.on('locationerror', onLocationError);
+// map.on('locationerror', onLocationError);

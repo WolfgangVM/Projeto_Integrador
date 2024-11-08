@@ -15,10 +15,10 @@ def localizacoes_views(request):
     localizacoes = PontoDescarte.objects.all()
     data = []
 
-    for PontoDescarte in localizacoes:
+    for ponto in localizacoes:
         data.append({
-            'nome': PontoDescarte.nome,
-            'latiude': PontoDescarte.latitude,
-            'longitude': PontoDescarte.longitude
+            'nome': ponto.nome,
+            'latitude': ponto.latitude,  
+            'longitude': ponto.longitude, 
         })
     return JsonResponse(data, safe=False)

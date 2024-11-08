@@ -19,7 +19,7 @@ from django.urls import path
 from home import views
 from django.conf import settings
 from django.conf.urls.static import static
-
+# from . import views
 
 
 
@@ -28,6 +28,6 @@ urlpatterns = [
     path('', views.home, name='index'),
     path('contato/', views.contato, name='contato'),
     path('info/', views.info, name='info'),
- 
+    # path('api/localizacoes/', views.localizacoes_view, name='localizacoes_view'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
