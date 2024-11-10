@@ -1,5 +1,5 @@
         // lacalização inicial Pederneiras
-var map = L.map('map').setView([-22.348923636964468, -48.77864794069507], 13); 
+var map = L.map('map').setView([-22.331065, -48.904538], 12); 
 
 
         // Adicionando o tile layer (mapa base)
@@ -16,20 +16,38 @@ map.on('click', onMapClick);
 
 
 
-        // Função para buscar as localizações e exibi-las no mapa
-fetch('/api/localizacoes/')
-            .then(response => response.json())
-            .then(data => {
-                data.forEach(function(localizacao) {
-                    L.marker([localizacao.latitude, localizacao.longitude])
-                        .addTo(map)
-                        .bindPopup(localizacao.nome);
-                });
-            })
-            .catch(error => console.error('Erro ao carregar localizações:', error));
+//         // Função para buscar as localizações e exibi-las no mapa
+// fetch('/api/localizacoes/')
+//             .then(response => response.json())
+//             .then(data => {
+//                 data.forEach(function(localizacao) {
+//                     L.marker([localizacao.latitude, localizacao.longitude])
+//                         .addTo(map)
+//                         .bindPopup(localizacao.nome);
+//                 });
+//             })
+//             .catch(error => console.error('Erro ao carregar localizações:', error));
 
 
-//         // Mobile
+
+
+
+            //pontos aadicionados manualmente
+var marker = L.marker([-22.348923636964468, -48.77864794069507],
+    {alt: 'Pederneiras'}).addTo(map)
+    .bindPopup('Cidade de Pederneiras');
+
+var marker = L.marker([-22.320307, -49.070382],
+    {alt: 'Bauru'}).addTo(map)
+    .bindPopup('Cidede de Bauru');
+
+
+
+    // var littleton = L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.'),
+    // denver    = L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.'),
+    // aurora    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
+    // golden    = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
+//         // Mobile 
 
 // var popup = L.popup();
 
