@@ -92,9 +92,17 @@ nav a:hover{
     display: none;
     flex-direction: column;
 }
+.barNavLateral:houver{
+    display: flex;
+    transition: 0.3s;
+}
 .navplateral{
     display: none;
     flex-direction: column;
+}
+.navplateral:houver{
+    display: flex;
+    transition: 0.3s;
 }
 
 
