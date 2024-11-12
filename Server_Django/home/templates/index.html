@@ -16,7 +16,7 @@
     <body style="background-image: url('{%static 'img/fundo.jpg'%}');">
             <nav>
                 <ul class="barra"> 
-                    <li class="logotipo"><a href="#"><img src="{%static 'img/reciclagem.png'%}">Pontos de Reciclagem</a></li>   
+                    <li class="logotipo"><a href="{% url 'index' %}"><img src="{%static 'img/reciclagem.png'%}">Pontos de Reciclagem</a></li>   
                     <li class="hideMobile"><a href="{% url 'index' %}">Home</a></li>                  
                     <li class="hideMobile">
                         <a aria-haspopup="true" href="">Locais</a>

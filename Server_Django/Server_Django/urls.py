@@ -32,8 +32,6 @@ Including another URLconf
 
 
 # Server_Django/urls.py
-
-# Server_Django/urls.py
 from django.contrib import admin
 from django.urls import path
 from home import views as home_views
@@ -43,7 +41,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_views.home, name='index'),
+    path('', home_views.home, name='index'),  # Corrigido para importar de home_views
     path('contato/', home_views.contato, name='contato'),
     path('info/', home_views.info, name='info'),
     path('chat/', chat_views.chat_home, name='chat_home'),
@@ -52,3 +50,4 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

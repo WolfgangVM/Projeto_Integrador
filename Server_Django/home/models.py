@@ -1,14 +1,6 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 
-# class Local(models.Model):
-#     nome = models.CharField(max_length=255)
-#     latitude = models.DecimalField(max_digits=10, decimal_places=8)
-#     longitude = models.DecimalField(max_digits=11, decimal_places=8)
-
-#     def __str__(self):
-#         return self.nome
-    
 
 class PontoDescarte(models.Model):
     nome = models.CharField(max_length=100)
