@@ -47,6 +47,10 @@ urlpatterns = [
     path('chat/', chat_views.chat_home, name='chat_home'),
     path('chat/save_message/', chat_views.save_message, name='save_message'),
     path('chat/save_comment/', home_views.save_comment, name='save_comment'),  # Nova URL para salvar comentário
+    path('fetch_last_comment/', chat_views.fetch_last_comment, name='fetch_last_comment'),
+    
+
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

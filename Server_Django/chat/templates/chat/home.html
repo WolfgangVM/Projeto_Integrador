@@ -68,12 +68,26 @@
         {% csrf_token %}
         <label for="comentario">Deixe um comentário:</label><br>
         <textarea id="comentario" name="comentario" placeholder="Digite seu comentário..." maxlength="255"></textarea><br><br>
-
+    
         <button type="submit">Enviar Comentário</button><br><br>
-
+    
         <label for="comentario_salvo">Comentário Salvo:</label><br>
-        <textarea id="comentario_salvo" name="comentario_salvo" placeholder="Comentário aparecerá aqui..." readonly>{{ comentario_salvo }}</textarea><br><br>
+        <textarea id="comentario_salvo" name="comentario_salvo" placeholder="Comentário aparecerá aqui..." readonly></textarea><br><br>
+    
+        <button type="button" id="fetch_last_comment">Mostrar Último Comentário</button>
     </form>
+    
+    <script>
+        document.getElementById('fetch_last_comment').addEventListener('click', function() {
+            fetch('{% url "fetch_last_comment" %}')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('comentario_salvo').value = data.comentario;
+            })
+            .catch(error => console.error('Error fetching last comment:', error));
+        });
+    </script>
+    
 
 </body>
 </html>
