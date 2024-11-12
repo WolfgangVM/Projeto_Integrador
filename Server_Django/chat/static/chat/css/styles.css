@@ -1,4 +1,9 @@
 /* Resetando margens e paddings para um estilo mais limpo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    font-family: "poppins";
+}
+
 * {
     margin: 0;
     padding: 0;
