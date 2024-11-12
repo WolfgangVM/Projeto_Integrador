@@ -54,14 +54,27 @@
         <h2>Fale Conosco</h2>
         <p></p>
         <p id="pcontato">Na caixa de dialogo, escreva sua duvida, informações sobre locais ou alguma sugestão.</p>
-        <div class="chat-box" id="chat-box">
-            <!-- As mensagens aparecerão aqui -->
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="pergunta">Pergunta:</label><br>
+            <input type="text" id="pergunta" name="pergunta" placeholder="Digite sua pergunta..." required><br>
+    
+            <button type="submit">Enviar</button><br><br>
+    
+            <label for="resposta">Resposta:</label><br>
+            <textarea id="resposta" name="resposta" placeholder="Resposta aparecerá aqui..." readonly>{{ resposta }}</textarea><br><br>
+        </form>
+
+        <!-- <div class="chat-box" id="chat-box">
+
+             As mensagens aparecerão aqui
         </div>
         <div class="chat-input">
             <input type="text" id="user-input" placeholder="Digite sua mensagem...">
             <button onclick="sendMessage()">Enviar</button>
         </div>
-    </section>
+    </section> -->
     
     
     <script src="{% static 'js/index.js' %}"></script>

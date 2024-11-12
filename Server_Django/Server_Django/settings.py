@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -89,10 +90,10 @@ DATABASES = {
         "PASSWORD": "flow7419663",
         "HOST": "localhost",
         "PORT": "3306",
-        'OPITIONS':{
-        'charset': 'utf8mb4',
-        'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        }
+        #'OPITIONS':{
+        #'charset': 'utf8mb4',
+        #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        #}
     }
 }
 
@@ -135,6 +136,9 @@ STTATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MIDIA_ROOT = os.path.join(BASE_DIR, 'img')
 MIDIA_URL = '/img/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'chat', 'static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

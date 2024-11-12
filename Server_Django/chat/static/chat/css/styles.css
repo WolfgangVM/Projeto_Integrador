@@ -1,0 +1,85 @@
+/* Resetando margens e paddings para um estilo mais limpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h1 {
+    color: 023047;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Estilo das labels */
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+    text-align: left;
+    color: #444;
+}
+
+/* Estilo do campo de pergunta */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+/* Estilo do campo de resposta */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Efeito de foco nos campos */
+input[type="text"]:focus, textarea:focus {
+    border-color: 023047;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: 023047;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4C89D1;
+}

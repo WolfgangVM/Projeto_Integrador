@@ -1,0 +1,92 @@
+/* Resetando margens e paddings para um estilo mais limpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 2vh;
+}
+
+/* Estilo do título */
+h1 {
+    color: #023047;
+    margin-bottom: 2vh;
+}
+
+/* Estilizando o formulário */
+form {
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 50vh;
+    width: 100%;
+}
+
+/* Estilo das labels */
+label {
+    font-size: 2vh;
+    margin-bottom: 0.8vh;
+    display: inline-block;
+    text-align: left;
+    color: #444;
+}
+
+/* Estilo do campo de pergunta */
+input[type="text"] {
+    width: 100%;
+    padding: 1vh;
+    font-size: 2vh;
+    margin-bottom: 2vh;
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5vh;
+    transition: border-color 0.3s;
+}
+
+/* Estilo do campo de resposta */
+textarea {
+    width: 100%;
+    padding: 1vh;
+    font-size: 2vh;
+    margin-bottom: 2vh;
+    height: 20vh; /* Ajuste para manter a área maior */
+    border: 0.1vh solid #ccc;
+    border-radius: 0.5vh;
+    resize: none;
+}
+
+/* Efeito de foco nos campos */
+input[type="text"]:focus, textarea:focus {
+    border-color: #023047;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #023047;
+    color: white;
+    padding: 1.2vh 2vh;
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+button:hover {
+    background-color: #4C89D1;
+}
