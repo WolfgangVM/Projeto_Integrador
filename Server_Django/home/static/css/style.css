@@ -174,11 +174,11 @@ footer{
 /*Stylo para pagina Contatos*/
 
 
-{
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Estilizando o corpo da página */
 body {
@@ -304,7 +304,7 @@ button:hover {
 /*.chat-input {
     display: flex;
     gap: 0;*/
-}
+/* } */
 /*.chat-input input {
     flex: 1;
     padding: 1em;
