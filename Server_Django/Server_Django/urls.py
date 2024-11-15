@@ -41,12 +41,12 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_views.home, name='index'),  # Corrigido para importar de home_views
+    path('', home_views.home, name='index'), 
     path('contato/', home_views.contato, name='contato'),
     path('info/', home_views.info, name='info'),
     path('chat/', chat_views.chat_home, name='chat_home'),
     path('chat/save_message/', chat_views.save_message, name='save_message'),
-    path('chat/save_comment/', home_views.save_comment, name='save_comment'),  # Nova URL para salvar comentário
+    path('chat/save_comment/', home_views.save_comment, name='save_comment'), 
     path('fetch_last_comment/', chat_views.fetch_last_comment, name='fetch_last_comment'),
     
 
